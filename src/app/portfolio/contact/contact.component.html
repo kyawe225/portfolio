@@ -13,28 +13,28 @@
         <div class="m-2">links</div>
         <div class="m-3">
           <p>
-            Linked in : <a href="https://www.linkedin.com/in/kyaw-zin-htet-153610178/">@KyawZinHtet</a>
+            Linked in : <a href="https://www.linkedin.com/in/kyaw-zin-htet-153610178/" role="link">@KyawZinHtet</a>
           </p>
           <p>
-            Github : <a href="https://github.com/kyawe225">@kyawe225</a>
-            Github 2 : <a href="https://github.com/kyawe1">@kyawe1</a>
+            Github : <a href="https://github.com/kyawe225" role="link">@kyawe225</a>
+            Github 2 : <a href="https://github.com/kyawe1" role="link">@kyawe1</a>
           </p>
         </div>
       </div>
     </div>
     <div class="col-6 border border-1">
-      <form [formGroup]="contactForm" class="lh-lg p-4 my-auto">
+      <form [formGroup]="contactForm" class="lh-lg p-4 my-auto" role="form">
         <div class="mb-2">
-          <label>Name</label>
-          <input type="text" class="form-control" formControlName="name"/>
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" formControlName="name" role="textbox"/>
         </div>
         <div class="mb-2">
-          <label>Email</label>
-          <input type="text" class="form-control" formControlName="email"/>
+          <label for="email">Email</label>
+          <input type="text" class="form-control" id="email" formControlName="email" role="textbox"/>
         </div>
         <div class="mb-2">
-          <label>Message</label>
-          <textarea type="text" class="form-control" formControlName="message"></textarea>
+          <label for="message">Message</label>
+          <textarea type="text" class="form-control" id="message" formControlName="message" role="textbox"></textarea>
         </div>
         <div class="mb-2">
           <input type="submit" value="Send" class="btn btn-primary w-100">
