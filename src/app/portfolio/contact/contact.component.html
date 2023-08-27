@@ -1,0 +1,45 @@
+<section class="" id="contact">
+  <span class="text-center h1 lh-base d-block m-2 p-3">CONTACT FORM</span>
+  <div class="row gap-2 align-items-stretch justify-content-center">
+    <div class="col-5 border border-1 p-1">
+      <div >
+        <div class="text-center h1">Contact Infos</div>
+        <div class="m-2">Name</div>
+        <div class="m-3">Kyaw Zin Htet</div>
+        <div class="m-2">Phone</div>
+        <div class="m-3">09252485742</div>
+        <div class="m-2">Email</div>
+        <div class="m-3">kyawzinhtet200116@outlook.com</div>
+        <div class="m-2">links</div>
+        <div class="m-3">
+          <p>
+            Linked in : <a href="https://www.linkedin.com/in/kyaw-zin-htet-153610178/">@KyawZinHtet</a>
+          </p>
+          <p>
+            Github : <a href="https://github.com/kyawe225">@kyawe225</a>
+            Github 2 : <a href="https://github.com/kyawe1">@kyawe1</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 border border-1">
+      <form [formGroup]="contactForm" class="lh-lg p-4 my-auto">
+        <div class="mb-2">
+          <label>Name</label>
+          <input type="text" class="form-control" formControlName="name"/>
+        </div>
+        <div class="mb-2">
+          <label>Email</label>
+          <input type="text" class="form-control" formControlName="email"/>
+        </div>
+        <div class="mb-2">
+          <label>Message</label>
+          <textarea type="text" class="form-control" formControlName="message"></textarea>
+        </div>
+        <div class="mb-2">
+          <input type="submit" value="Send" class="btn btn-primary w-100">
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

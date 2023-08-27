@@ -1,0 +1,14 @@
+<section id="skills">
+  <span class="text-center h1 lh-base d-block m-2 p-3">SKILLS</span>
+  <div class="m-2 mb-5 px-3 mx-2 custom-flex gap-2">
+    <div class="card col p-0 " *ngFor="let i of skills">
+      <div class="card-body">
+        <p>{{i.name}}</p>
+        <div class="m-2 w-100 px-1">
+          <progress max="100" value={{i.value}}></progress>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="w-75 d-block mx-auto" />
+</section>
