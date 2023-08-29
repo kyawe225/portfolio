@@ -6,6 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PortfolioRoutingModule } from './portfolio-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,10 +18,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    PortfolioRoutingModule
   ],
-  exports:[
-    PortfolioComponent
-  ]
 })
 export class PortfolioModule { }

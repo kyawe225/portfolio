@@ -5,7 +5,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 const routes: Routes = [
   {
     path:"",
-    component:PortfolioComponent
+    loadChildren: ()=> import('./portfolio/portfolio.module').then(p=> p.PortfolioModule)
   }
 ];
 

@@ -13,7 +13,6 @@ import { PortfolioModule } from './portfolio/portfolio.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PortfolioModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
